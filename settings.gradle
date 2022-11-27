@@ -1,0 +1,8 @@
+rootProject.name = 'tenant-filter'
+include 'hibernate-tenant-attribute'
+include 'hibernate-tenant-schema'
+include 'mongo-tenant-schema'
+include 'mongo-tenant-attribute'
+include 'hibernate-property-tenant'
+include 'mongo-tenant-schema-reactive'
+

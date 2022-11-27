@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: customer
+  datasource:
+    url: jdbc:h2:mem:customer
+    driver-class-name: org.h2.Driver
+
+  flyway:
+    enabled: false
+
+  output:
+    ansi:
+      enabled: always
+
+  jpa:
+    show-sql: true
+    hibernate:
+      multiTenancy: SCHEMA
+      ddl-auto: create-drop
+      use-new-id-generator-mappings: true
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8880
+
+logging:
+  level:
+    ROOT: info
+
+hibernate:
+  multiTenancy: SCHEMA
